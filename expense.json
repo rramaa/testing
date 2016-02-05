@@ -1,0 +1,37 @@
+Transactions:
+{
+	"account_id": {
+		"day": [{
+			"id": "ID Of Transaction",
+			"type": "Expense/Income",
+			"category": "Category of Transaction",
+			"mode": "Transfer",
+			"value": "Value of Transaction",
+			"description": "Comments about transaction",
+			"timestamp": "Actual Time"
+		}],
+		"count": "Number of Transactions"
+	}
+}
+
+Categories:
+{
+  "data": [
+    {
+      "id": "ID Of Category",
+      "name": "Name of Category"
+    }
+  ],
+  "count": "Number of Categories"
+}
+
+Account Info:
+{
+  "data": [
+    {
+      "id": "Account Id",
+      "Name": "Name of Account"
+    }
+  ],
+  "count": "Number of Accounts"
+}

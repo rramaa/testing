@@ -1,0 +1,174 @@
+@media screen and (max-width: 950px){
+	#sidebar{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 80px;
+	}
+	#sidebar span{
+    	vertical-align: top;
+    	line-height: 2;
+    	padding: 5px;
+	}
+	#content{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 80px;
+		width: 100%;
+		height: 580px;
+	}
+	#sidebar ul{
+		width: 100%;
+	}
+	#sidebar ul li{
+		height: 50px;
+		line-height: 50px;
+		cursor: pointer;
+		overflow-x:scroll;
+		display: inline-block;
+		border: 1px solid white;
+	}
+}
+@media screen and (min-width: 949px){
+	#sidebar{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 20%;
+		height: 580px;
+	}
+	#content{
+		position: absolute;
+		left: 20%;
+		right: 0;
+		top: 0;
+		width: 80%;
+		height: 580px;
+	}
+}
+body{
+	font-family: Verdana;
+}
+textarea{
+	resize:none;
+}
+textarea:focus,button:focus,input:focus{
+	outline-style: none;
+}
+#main{
+	position: relative;
+	width: 100%;
+}
+#sidebar{
+	/*float: left;*/
+	background-color: #232323;
+	color: white;
+	border: 1px solid black;
+}
+#sidebar span{
+	margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.3em;
+}
+#sidebar ul{
+	list-style: none;
+}
+#sidebar ul li{
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+	overflow-x:scroll; 
+}
+#sidebar ul li:hover{
+	font-weight: bold;
+	background-color: #313131
+}
+#content{
+	/*float: left;*/
+	border: 1px solid black; 
+	text-align: center;
+}
+#content h2{
+	margin: auto;
+}
+#content div{
+	border: 1px solid black;
+	height: 475px;
+}
+#content div{
+	display: none;
+}
+#content div.show{
+	display: block;
+}
+div{
+	box-sizing:border-box;
+	padding: 5px;
+}
+.calculator-div{
+    display: table !important;
+    width: 240px;
+    height: auto !important;
+    margin: auto;
+}
+button.calculator-buttons {
+    display: table-cell;
+    width: 75px;
+    height: 40px;
+    font-size: 1em;
+    background-image: radial-gradient(#FFFFFF,#B4BCDA);
+}
+.calculator-screen{
+    width: 220px;
+    height: 50px;
+    resize:none;
+    background-color: #E4FFE6;
+    font-family: Courier;
+    font-size: 1em;
+}
+.add-category-div,.add-account-div{
+	display: block !important;
+	width: 
+}
+.new-transaction-div{
+	display: block !important;
+}
+.new-transaction-div div{
+	display: inline-block !important;
+    height: auto !important;
+    width: 166px;
+    border: none !important;
+}
+input{
+	padding: 5px;
+	margin: 5px;
+}
+a{
+	cursor: pointer;
+}
+.switch-account-div, .switch-account-div div{
+	display: inline-block !important;
+	height: auto !important;
+	border: none !important;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #313131;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #313131;
+    box-shadow: none;
+}

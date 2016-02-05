@@ -1,0 +1,32 @@
+{
+  "moduleName": {
+    "functions": {
+      "init": {
+        "name": "name",
+        "testCases": [
+          {
+            "input": "inputs",
+            "output": "outputs",
+            "assertion": "assertionType",
+            "mocks": "mocks expects"
+          }
+        ]
+      }
+    },
+    "prerequisites": {
+      "realServices": [],
+      "fakeServices": [
+        {
+          "service1": {
+            "stubs": {
+              "fun1Stub": {
+                "args1": "returns",
+                "args2": "returns"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
