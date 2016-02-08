@@ -22,6 +22,8 @@ Box.Application.addModule('sidebar-menu',function(context){
 				moduleToStop.removeAttribute("class");
 			}
 			var moduleToStart=document.querySelector('[data-module-name="'+moduleName+'"]');
+			if(moduleToStart===null)
+				return "Module does not exist";
 			moduleToStart.setAttribute('data-module',moduleName);
 			moduleToStart.setAttribute("class","show");
 			Box.Application.startAll(modules);

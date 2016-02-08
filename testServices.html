@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/qunit-1.21.0.css">
+</head>
+
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">
+        <div id="header">
+            <h1>Expense Manager</h1>
+            <hr>
+        </div>
+        <div id="main">
+            <div id="sidebar" data-module="sidebar-menu">
+                <ul>
+                    <span>Menu</span>
+                    <li data-type="new-transaction">New Transaction</li>
+                    <li data-type="calculator">Calculator</li>
+                    <li data-type="calendar">Calendar</li>
+                    <li data-type="summary">Summary</li>
+                    <li data-type="switch-account">Switch Accounts</li>
+                    <li data-type="add-category">Add Category</li>
+                    <li data-type="add-account">Add Account</li>
+                </ul>
+            </div>
+            <div id="content">
+                <h2 id="view-title">Title of View</h2>
+                <h4 id="account-selected">Account Selected</h4>
+                <div data-module-name="new-transaction"></div>
+                <div data-module-name="calculator"></div>
+                <div data-module-name="calendar">C</div>
+                <div data-module-name="summary">D</div>
+                <div data-module-name="switch-account"></div>
+                <div data-module-name="add-category"></div>
+                <div data-module-name="add-account"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-color.js"></script>
+    <!-- T3 -->
+    <script type="text/javascript" src="js/t3-testing.js"></script>
+    <!-- Modules -->
+    <script type="text/javascript" src="js/modules/sidebar-menu.js"></script>
+    <script type="text/javascript" src="js/modules/new-transaction.js"></script>
+    <script type="text/javascript" src="js/modules/calculator.js"></script>
+    <script type="text/javascript" src="js/modules/calendar.js"></script>
+    <script type="text/javascript" src="js/modules/summary.js"></script>
+    <script type="text/javascript" src="js/modules/add-category.js"></script>
+    <script type="text/javascript" src="js/modules/switch-account.js"></script>
+    <script type="text/javascript" src="js/modules/add-account.js"></script>
+    <!-- Services -->
+    <script type="text/javascript" src="js/services/db.js"></script>
+    <script type="text/javascript" src="js/services/globals.js"></script>
+    <script type="text/javascript" src="js/services/utilities.js"></script>
+    <!-- Sinon -->
+    <script type="text/javascript" src="js/sinon-1.17.3.js"></script>
+    <!-- QUnit -->
+    <script src="js/qunit-1.21.0.js"></script>
+    <!-- Script -->
+    <script type="text/javascript" src="js/testingUtilities.js"></script>
+    <script type="text/javascript" src="js/testServices.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

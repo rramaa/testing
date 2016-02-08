@@ -9,6 +9,7 @@ Box.Application.addModule('calculator',function(context){
 			table=[9,8,7,6,5,4,3,2,1,'+',0,'-','/','=','*','.','C','CE'];
 			exp="";
 			calculated=false;
+			this.createCalculator();
 		},
 		createCalculator:function(){
 			var div=utilities.createElement("div",null,null,"calculator-div");

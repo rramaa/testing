@@ -1,0 +1,109 @@
+{
+  "utilities": {
+    "functions": {
+      "isUnique": {
+        "name": "Check for uniqueness of data",
+        "mocks": false,
+        "testCases": [
+          {
+            "name": "Data doesn't exist",
+            "input": [
+              {
+                "data": [
+                  {
+                    "name": "qw"
+                  },
+                  {
+                    "name": "cd"
+                  }
+                ]
+              },
+              "one"
+            ],
+            "assertion": "ok"
+          },
+          {
+            "name": "Data exists",
+            "input": [
+              {
+                "data": [
+                  {
+                    "name": "one"
+                  },
+                  {
+                    "name": "cd"
+                  }
+                ]
+              },
+              "one"
+            ],
+            "assertion": "notOk"
+          }
+        ]
+      },
+      "capitalizeFirstLetter": {
+        "name": "Capitalize First Letter",
+        "mocks": false,
+        "testCases": [
+          {
+            "name": "two",
+            "input": [
+              "two"
+            ],
+            "output": "Two"
+          }
+        ]
+      }
+    },
+    "prerequisites": {
+      "realServices": [],
+      "fakeServices": [
+        {
+          "db": {
+            "stubs": {
+              "getData": {
+                "accounts": 42,
+                "categories": 52
+              },
+              "setData": {}
+            }
+          }
+        }
+      ]
+    }
+  },
+  "globals": {
+    "functions": {
+      "update": {
+        "name": "Update Function",
+        "testCases": [
+          {
+            "name": "Initialize data",
+            "input": [
+              "key",
+              "value"
+            ],
+            "output": null,
+            "assertion": "deepEqual"
+          },
+          {
+            "name": "Get value of existing key",
+            "input": [
+              "key"
+            ],
+            "output": "value",
+            "assertion": "deepEqual"
+          },
+          {
+            "name": "Get value of non-existing key",
+            "input": [
+              "key2"
+            ],
+            "output": null,
+            "assertion": "deepEqual"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -60,7 +60,11 @@ Box.Application.addService('utilities',function(application){
 			return false;
 		},
 		capitalizeFirstLetter:function(text){
-			return text.charAt(0).toUpperCase() + text.slice(1);
+			if(text){
+				return text.charAt(0).toUpperCase() + text.slice(1);
+			}
+			else
+				return "";
 		},
 		getCurrentDateCode:function(inputDate){
 			if(inputDate){
